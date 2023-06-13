@@ -1,15 +1,23 @@
 # 100 Days of Code
- Repository with all I've done in my 100 Days of Code Challenge
 
+This repository documents my journey through the 100 Days of Code challenge, where I aim to learn coding by programming one 'challenge' every day. Here, you will find all the exercises and programs I have developed using Python during this challenge.
 
-I'm' triying to organize in the best way possible all my exercises and programms I have made with Python during the lessons.
+## Motivation
 
-Every folder has its own readme and 'documentation' so to speak. Feel free to look around the exercises and the code! :)
+The purpose of this repository is to organize and showcase my progress throughout the 100 Days of Code challenge. Each folder represents a specific day of the challenge and contains a corresponding README file that provides a summary and documentation of the exercises completed on that day.
 
-As this is still a work in progress and my coding skills are also a work in progress all criticism is welcome.
+Feel free to explore the exercises and code within each folder. Your feedback and criticism are greatly appreciated, as this challenge serves as an opportunity for me to learn and grow as a programmer.
 
+## Work in Progress
 
-Everytime I complete a new day and its exercises, I will be pushing it to this repository with its own description and documentation (possibly with images later on).
+Please note that this repository is still a work in progress. As I progress through the challenge, I will be updating this repository with new exercises, descriptions, and documentation. I may even incorporate images and additional resources in the future.
 
-This also serves for me to get pratice with Git and version control.
+## Version Control
 
+This repository also serves as an opportunity for me to practice using Git and version control. By utilizing Git, I aim to maintain a clear and organized history of my coding journey throughout this 100 Days of Code challenge.
+
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to reach out. You can contact me at l.correa@pm.me
+
+Thanks for coming by! =)
