@@ -29,7 +29,7 @@ def generate_pass():
 
 # ----------- Save Passwords ----------- #
 def save_pass():
-    website = website_box.get()
+    website = website_box.get().title()
     email = email_box.get()
     password = password_box.get()
     new_data = {
@@ -51,14 +51,14 @@ def save_pass():
 
         except FileNotFoundError:
             with open("data.json", "w") as password_data:
-                json.dump(new_data,password_data, indent=4)
+                json.dump(new_data, password_data, indent=4)
 
         else:
             # Now UPDATE this 'old data' with fresh inputted data
             data.update(new_data)
 
             # Now after updating data we save the fresh updated data - OPEN FILE AS WRITE MODE!
-            with open("data.json","w") as password_data:
+            with open("data.json", "w") as password_data:
                 # Saving updated data
                 json.dump(data, password_data, indent=4)
 
@@ -67,8 +67,44 @@ def save_pass():
             email_box.delete(0, END)
             password_box.delete(0, END)
 
+
 # ----------- Search Password ----------- #
 
+def search_passw():
+    # Get what's inside the box
+    website_search = website_box.get().title()
+
+    # Make sure user typed something that can be searched
+    if len(website_search) == 0:
+        messagebox.showinfo(title="Oops!", message="Website field is empty - Cannot search this way.")
+
+    else:
+        try:
+            # First open the json file in read mode only - nothing is going to be written - and save it to a variable
+            with open("data.json", "r") as password_data:
+                data = json.load(password_data)
+
+        # If there's no json file - show error box
+        except FileNotFoundError:
+            messagebox.showinfo(title="Oops!", message="There is no searchable password database.")
+
+            # Ask the user if they want to create one?
+            # if create_json == "":
+            #     with open("data.json", "w") as password_data:
+            #         json.dump(password_data, indent=4)
+
+        else:
+            # Now try to search in the json file for a entry that matches what the user typed
+            # If it matches, then cool
+            if website_search in data:
+                # Save each entry - email and password - each to a separate variable
+                saved_email = data[website_search]["email"]
+                saved_password = data[website_search]["password"]
+                messagebox.showinfo(title=website_search, message=f"Email: {saved_email}\nPassword: {saved_password}")
+
+            else:
+                # If there is no match, print message box saying there's no match
+                messagebox.showinfo(title="Oops!", message="There's no saved email or password for this website.")
 
 
 # ----------- UI Setup ----------- #
@@ -104,8 +140,8 @@ password_label.grid(row=3, column=0)
 # ----- Entry Boxes ----- #
 
 # Website
-website_box = tkinter.Entry(width=55)
-website_box.grid(row=1, column=1, columnspan=2)
+website_box = tkinter.Entry(width=34)
+website_box.grid(row=1, column=1)
 website_box.focus()
 
 # Email
@@ -127,6 +163,11 @@ generate_password.grid(row=3, column=2)
 add_password = tkinter.Button()
 add_password.config(text="Add Password", width=48, command=save_pass)
 add_password.grid(row=4, column=1, columnspan=2)
+
+# Search Password
+search = tkinter.Button()
+search.config(text="Search Password", width=14, command=search_passw)
+search.grid(row=1, column=2)
 
 ## Keep window running
 window.mainloop()
