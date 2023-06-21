@@ -36,6 +36,6 @@ pip install -r requirements.txt
 
 ## Customization
 
-- Place your own words list in the `data/french_words.csv` file. Make sure the CSV file contains named columns for each word and its translations.
+- Place your own words list as `data/[language]_words.csv` file. Make sure the CSV file contains named columns for each word and its translations.
 - You can replace the flashcard front and back images with your own images in the `images/` directory, using the filenames `card_front.png` and `card_back.png`.
 - Customize the application's appearance and layout by modifying the code in the UI section.
