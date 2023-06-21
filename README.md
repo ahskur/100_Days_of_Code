@@ -1,4 +1,4 @@
-# 100 Days of Code
+# 💯 Days of Code with Python!
 
 This repository documents my journey through the 100 Days of Code challenge, where I aim to learn coding by programming one 'challenge' every day. Here, you will find all the exercises and programs I have developed using Python during this challenge.
 
