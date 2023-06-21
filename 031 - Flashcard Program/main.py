@@ -18,12 +18,12 @@ except FileNotFoundError:
 else:
     words_to_learn = word_data.to_dict(orient="records")
 
-# Open word list with Pandas and save to variable
-word_data = pandas.read_csv("data/french_words.csv")
-# Create a dictionary using pandas
-words_to_learn = word_data.to_dict(orient='records')
-# Debug print
-# print(words_to_learn)
+# # Open word list with Pandas and save to variable
+# word_data = pandas.read_csv("data/french_words.csv")
+# # Create a dictionary using pandas
+# words_to_learn = word_data.to_dict(orient='records')
+# # Debug print
+# # print(words_to_learn)
 
 # Now pick a random word from the file using random choice
 # random_word_french = word_data["French"][random.randint(0,101)]
@@ -65,6 +65,7 @@ def is_know():
     # And does't include word index when saving to csv (index = word number in the dictionary)
     know_word_list.to_csv("data/words_to_learn.csv", index=False)
 
+
 # -------------------- UI -------------------- #
 
 # --- Window Setup --- #
@@ -82,18 +83,18 @@ flashcard_front = PhotoImage(file="images/card_front.png")
 flashcard_back = PhotoImage(file="images/card_back.png")
 flashcard_background = canvas.create_image(400, 263, image=flashcard_front)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
-card_title = canvas.create_text(400,150, text="Title", font=("Arial", 40, "italic"))
+card_title = canvas.create_text(400, 150, text="Title", font=("Arial", 40, "italic"))
 card_word = canvas.create_text(400, 263, text="Word", font=("Ariel", 48, "bold"))
 canvas.grid(row=0, column=0, columnspan=2)
 
 # --- Buttons --- #
 
 right_button_png = PhotoImage(file="images/right.png")
-right_button = Button(image=right_button_png, highlightthickness=0, command=pass_card)
+right_button = Button(image=right_button_png, highlightthickness=0, command=is_know)
 right_button.grid(row=1, column=1)
 
 wrong_button_png = PhotoImage(file="images/wrong.png")
-wrong_button = Button(image=wrong_button_png, highlightthickness=0, command=is_know)
+wrong_button = Button(image=wrong_button_png, highlightthickness=0, command=pass_card)
 wrong_button.grid(row=1, column=0)
 
 # Generate a first card after opening the game
