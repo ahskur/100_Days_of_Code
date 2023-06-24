@@ -32,7 +32,8 @@ Please note that it is recommended to use a test email account, such as [Etherea
 
 ## Letter Templates
 
-Create personalized letter templates in the `letter_templates/` directory. These templates will serve as the content of the birthday emails. Use plain text files and include the desired message. To personalize the emails, use the placeholder `[NAME]` in the template. This placeholder will be replaced with the recipient's name when sending the email.
+Create personalized letter templates in the `letter_templates/` directory. These templates will serve as the content of the birthday emails. 
+Use plain text files and include the desired message. To personalize the emails, use the placeholder `[NAME]` in the template. This placeholder will be replaced with the recipient's name when sending the email.
 
 ## Dependencies
 
@@ -49,14 +50,3 @@ Install the required dependencies by running the following command:
 pip install pandas
 ```
 
-## Disclaimer
-
-Remember to use this script responsibly and in compliance with applicable laws and regulations. Double-check the recipient's consent and ensure that you have the necessary permissions to send them emails. The script is provided as-is, without any warranty or guarantee of its functionality or suitability for any purpose.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to modify, distribute, and use the code for personal or educational purposes.
-
----
-
-Automate birthday emails and send personalized greetings to your loved ones with the Birthday Email Sender. Make their special day even more memorable and show them your heartfelt wishes. Happy coding!
