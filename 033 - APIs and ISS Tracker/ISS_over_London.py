@@ -4,8 +4,8 @@ import smtplib
 import time
 
 # --- Email Settings --- #
-my_email = "michel.carter29@ethereal.email"
-my_password = "MrmhqWCzUZjGWSWpzv"
+my_email = "[YOUR EMAIL GOES HERE]"
+my_password = "[YOUR PASWORD GOES HERE]"
 
 # --- Starting Position - London --- #
 # Set London's latitude and longitude as floating numbers
