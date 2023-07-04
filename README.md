@@ -4,7 +4,7 @@ This repository documents my journey through the 100 Days of Code challenge, whe
 
 ## Motivation
 
-The purpose of this repository is to organize and showcase my progress throughout the 100 Days of Code challenge. Each folder represents a specific day of the challenge and contains a corresponding README file that provides a summary and documentation of the exercises completed on that day.
+The purpose of this repository is to organize and showcase my progress throughout the 100 Days of Code challenge. Each folder represents a specific day of the challenge and contains a corresponding README file that provides a summary the exercises completed on that day.
 
 Feel free to explore the exercises and code within each folder. Your feedback and criticism are greatly appreciated, as this challenge serves as an opportunity for me to learn and grow as a programmer.
 
@@ -18,6 +18,6 @@ This repository also serves as an opportunity for me to practice using Git and v
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out. You can contact me at l.correa@pm.me
+If you have any questions, suggestions or feedback, please feel free to reach out. You can contact me at l.correa@pm.me
 
 Thanks for coming by! =)
