@@ -25,7 +25,7 @@ pip install requests
 1. Run the script using Python:
 
 ```bash
-python fitness_tracker.py
+python workout_tracker.py
 ```
 
 2. Follow the prompt to enter the exercise details for the day, including the exercise performed and the duration.
