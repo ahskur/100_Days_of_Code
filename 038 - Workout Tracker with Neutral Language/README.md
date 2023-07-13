@@ -46,4 +46,4 @@ pip install requests
 
 ## Disclaimer
 
-Please note that the Fitness Tracker script is provided as-is, without any warranty or guarantee of its functionality or suitability for any purpose. Use it responsibly and in compliance with the terms and conditions of the Nutritionix API and the Sheety API.
+Please note that this script is provided without any warranty or guarantee of its functionality or suitability for any purpose. Use it responsibly and in compliance with the terms and conditions of the Nutritionix API and the Sheety API.
