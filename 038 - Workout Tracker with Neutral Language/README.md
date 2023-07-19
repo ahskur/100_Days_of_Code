@@ -1,6 +1,8 @@
-# Fitness Tracker
+# Workout Sheet Manager
 
-The Fitness Tracker is a Python script that integrates with the Nutritionix API and the Sheety API to track and log exercise data in a Google Sheets spreadsheet. It allows users to input their exercise details, such as the exercise performed, duration, and calories burned, and stores the data in a structured format for easy tracking and analysis.
+This 'Fitness Tracker' is a Python script that integrates with the Nutritionix API and it's Natural Language Model and the Sheety API to track and log exercise data in a Google Sheets spreadsheet. It allows users to input their exercise details, such as the exercise performed, duration, and calories burned, and stores the data in a structured format for easy tracking and analysis.
+
+![PassManager](https://github.com/ahskur/100_Days_of_Code/assets/63268217/cab04048-8693-4c36-ac89-f6274494fd44)
 
 
 ## Setup
@@ -24,7 +26,7 @@ pip install requests
 1. Run the script using Python:
 
 ```bash
-python fitness_tracker.py
+python workout_tracker.py
 ```
 
 2. Follow the prompt to enter the exercise details for the day, including the exercise performed and the duration.
@@ -45,4 +47,4 @@ pip install requests
 
 ## Disclaimer
 
-Please note that the Fitness Tracker script is provided as-is, without any warranty or guarantee of its functionality or suitability for any purpose. Use it responsibly and in compliance with the terms and conditions of the Nutritionix API and the Sheety API.
+Please note that this script is provided without any warranty or guarantee of its functionality or suitability for any purpose. Use it responsibly and in compliance with the terms and conditions of the Nutritionix API and the Sheety API.
