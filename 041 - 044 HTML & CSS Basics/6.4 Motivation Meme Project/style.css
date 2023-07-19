@@ -1,0 +1,29 @@
+html{
+    background-color: black;
+}
+h1{
+    font: Georgia;
+    color: white;
+    font-weight: 3rem;
+    font-family: "Libre Baskerville", serif;
+}   
+h3{
+    font: Arial bold;
+    font-size: 12px;
+    color: whitesmoke;
+    font-family: "Times New Roman", light;
+    text-align: center;
+    padding-top: 150px;
+}
+div{
+    text-align: center;
+    padding-top: 20px;
+}
+#lememe{
+    border: 8px solid white;
+    width: 40%;
+}
+.gif{
+    width: 5%;
+    
+}
