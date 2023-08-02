@@ -9,7 +9,7 @@ Welcome to Higher or Lower, the game where you'll test your knowledge of Instagr
 1. Run the game by executing the following command:
 
 ```bash
-python higher_or_lower.py
+python Higher_or_Lower.py
 ```
 
 2. You'll be shown two names of celebrities along with their descriptions and countries.
