@@ -7,7 +7,7 @@ It's a simple command-line calculator that allows users to perform basic arithme
 1. Run the calculator script by executing the following command:
 
 ```bash
-python calculator.py
+python Pythoneer2000.py
 ```
 
 2. The calculator will display the logo and prompt you to enter the first number.
